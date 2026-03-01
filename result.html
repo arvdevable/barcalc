@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Site title">
+    <meta name="description" content="Site description">
+    <meta name="keywords" content="keyword, keyword">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
+    <title>song bar to seconds calculator</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="hero">song bar to seconds calculator</h1>
+    </header>
+    <main>
+        <div id="result">
+            <h1 class="hero" style="font-variation-settings: 'wdth' 90; font-weight: 400; font-size: 20px;">result</h1>
+            <p>one beat in seconds = <span class="monospace"><span id="beatsecs"></span></span>
+            <p>total with +sec in seconds = <span class="monospace"><span id="beatsecs"></span></span>
+            <p>total without +sec in seconds = </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="yr"></span> <a href="https://github.com/arvdevable">blasius nafiri marvin</a>. open source under <a href="https://github.com/arvdevable/barcalc/blob/main/LICENSE">MIT license</a>.</p>
+    </footer>
+    <script>
+        document.getElementById("yr").textContent = new Date().getFullYear();
+        document.getElementById('secstotal').textContent = "1.2";
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
