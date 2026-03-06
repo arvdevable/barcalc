@@ -448,8 +448,8 @@
       const totalBars  = barsTo - barsFrom + 1;
       const rangeSecs  = oneBarSecs * totalBars;
 
-      const startSeconds = (barsFrom - 1) * oneBarSecs;
-      const endSeconds   = barsTo * oneBarSecs;
+      const startSeconds = (barsFrom - 1) * oneBarSecs + plussecs;
+      const endSeconds   = barsTo * oneBarSecs + plussecs;
 
       setVal(rStart, `Start: ${fmt(startSeconds)} s`);
       setVal(rEnd,   `End: ${fmt(endSeconds)} s`);
