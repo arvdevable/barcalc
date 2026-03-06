@@ -451,8 +451,8 @@
       const startSeconds = (barsFrom - 1) * oneBarSecs;
       const endSeconds   = barsTo * oneBarSecs;
 
-      setVal(rStart, `Start: ${fmt(startSeconds)}`);
-      setVal(rEnd,   `End: ${fmt(endSeconds)}`);
+      setVal(rStart, `Start: ${fmt(startSeconds)} s`);
+      setVal(rEnd,   `End: ${fmt(endSeconds)} s`);
       rDuration.textContent = `Duration: ${fmt(rangeSecs)} s`;
 
       // Block 3 & 4: range
